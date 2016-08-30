@@ -1,0 +1,112 @@
+<Installer version="2.0">
+  <Variable Name="SourcePath" Value="" Required="True" />
+  <Variable Name="TempPath" Value="$SystemDrive\Temp" />
+  <Variable Name="Download" Value="$SystemDrive\Temp" />
+	<Installable Name="NotepadPP">
+	  <Variable Name="NotepadPPSource" Value="NotepadPP" />
+	  <SourceFolder>$NotepadPP</SourceFolder>
+	  <Download>
+		<Type>Download</Type>
+		<URL>https://notepad-plus-plus.org/repository/6.x/6.9.1/npp.6.9.1.Installer.exe</URL>
+		<File>npp.6.9.1.Installer.exe</File>
+		<FileSize>2154496</FileSize>
+	  </Download>
+	  <Install Name="PowerShell Extensions for SQL Server 2014">
+		<Validation>
+		  <Type>ProductCode</Type>
+		  <Value>{6A7D0067-CF88-453E-9EA5-A2008EC7CB19}</Value>
+		</Validation>
+		<CommandLines>
+		  <CommandLine>
+			<Executable>msiexec.exe</Executable>
+			<Switches>
+			  <Switch>
+				<Value>/q</Value>
+			  </Switch>
+			  <Switch>
+				<Value>/i</Value>
+			  </Switch>
+			  <Switch>
+				<Value>$TempPath\Installer\$NotepadPP\npp.6.9.1.Installer.exe</Value>
+			  </Switch>
+			  <Switch>
+				<Value>ALLUSERS=2</Value>
+			  </Switch>
+			</Switches>
+		  </CommandLine>
+		</CommandLines>
+	  </Install>
+	</Installable>
+
+	<Installable Name="Wireshark-win64">
+	  <Variable Name="Wireshark-win64Source" Value="Wireshark-win64" />
+	  <SourceFolder>$NotepadPP</SourceFolder>
+	  <Download>
+		<Type>Download</Type>
+		<URL>https://2.na.dl.wireshark.org/win64/Wireshark-win64-2.0.5.exe</URL>
+		<File>npp.6.9.1.Installer.exe</File>
+		<FileSize>2154496</FileSize>
+	  </Download>
+	  <Install Name="PowerShell Extensions for SQL Server 2014">
+		<Validation>
+		  <Type>ProductCode</Type>
+		  <Value>{6A7D0067-CF88-453E-9EA5-A2008EC7CB19}</Value>
+		</Validation>
+		<CommandLines>
+		  <CommandLine>
+			<Executable>msiexec.exe</Executable>
+			<Switches>
+			  <Switch>
+				<Value>/q</Value>
+			  </Switch>
+			  <Switch>
+				<Value>/i</Value>
+			  </Switch>
+			  <Switch>
+				<Value>$TempPath\Installer\$Wireshark-win64\Wireshark-win64-2.0.5.exe</Value>
+			  </Switch>
+			  <Switch>
+				<Value>ALLUSERS=2</Value>
+			  </Switch>
+			</Switches>
+		  </CommandLine>
+		</CommandLines>
+	  </Install>
+	</Installable>
+
+	<Installable Name="7zip-x64">
+	  <Variable Name="7zip-x64Source" Value="7zip-x64" />
+	  <SourceFolder>$NotepadPP</SourceFolder>
+	  <Download>
+		<Type>Download</Type>
+		<URL>http://7-zip.org/a/7z1602-x64.msi</URL>
+		<File>npp.6.9.1.Installer.exe</File>
+		<FileSize>2154496</FileSize>
+	  </Download>
+	  <Install Name="PowerShell Extensions for SQL Server 2014">
+		<Validation>
+		  <Type>ProductCode</Type>
+		  <Value>{6A7D0067-CF88-453E-9EA5-A2008EC7CB19}</Value>
+		</Validation>
+		<CommandLines>
+		  <CommandLine>
+			<Executable>msiexec.exe</Executable>
+			<Switches>
+			  <Switch>
+				<Value>/q</Value>
+			  </Switch>
+			  <Switch>
+				<Value>/i</Value>
+			  </Switch>
+			  <Switch>
+				<Value>$TempPath\Installer\$7zip-x64\7z1602-x64.msi</Value>
+			  </Switch>
+			  <Switch>
+				<Value>ALLUSERS=2</Value>
+			  </Switch>
+			</Switches>
+		  </CommandLine>
+		</CommandLines>
+	  </Install>
+	</Installable>
+</Installer>

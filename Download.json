@@ -1,0 +1,7 @@
+{
+    "Applications":{
+					{"Name":"NotePad++","URL":"https://notepad-plus-plus.org/repository/6.x/6.9.1/npp.6.9.1.Installer.exe"},
+					{"Name":"Wireshark x64","URL":"https://2.na.dl.wireshark.org/win64/Wireshark-win64-2.0.5.exe"},
+					{"Name":"7zip","URL":"http://7-zip.org/a/7z1602-x64.msi"}
+                   }
+}
