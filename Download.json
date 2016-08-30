@@ -2,6 +2,11 @@
     "Applications":[ 
 		{"Name":"NotePad++","URL":"https://notepad-plus-plus.org/repository/6.x/6.9.1/npp.6.9.1.Installer.exe"},
 		{"Name":"Wireshark x64","URL":"https://2.na.dl.wireshark.org/win64/Wireshark-win64-2.0.5.exe"},
-		{"Name":"7zip","URL":"http://7-zip.org/a/7z1602-x64.msi"}
+        {"Name":"KeePass","URL":""},
+        {"Name":"Putty","URL":"https://the.earth.li/~sgtatham/putty/latest/x86/putty-0.67-installer.msi"},
+		{"Name":"7zip","URL":"http://7-zip.org/a/7z1602-x64.msi"},
+        {"Name":"Remote Desktop Connection Manager","URL":""},
+        {"Name":"WinMerge","URL":"http://downloads.sourceforge.net/winmerge/WinMerge-2.14.0-Setup.exe"},
+        {"Name":"SCCM Client Center","URL":""}
     ]
 }
